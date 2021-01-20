@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Basics CSS selectors</title>
+
+    <style type="text/css">
+
+        h1 {
+            color: blueviolet;
+        }
+        .content {
+            color: brown;
+        }
+       
+        p.content{
+            color: chartreuse;
+        }
+    </style>
+</head>
+<body>
+    <h1>Main Heading</h1>
+    <p>Paragraph 0. Not in a div.</p>
+    <div id="first-div" class="content">
+        <p>Paragraph 1. in the div. </p>
+        <p>Paragraph 2. in the div.</p>
+        <div id="second-div">
+            <p>Paragraph 3. in the 2nd div.</p>
+        </div>
+    </div>
+<p class="content">Paragraph 4. Not in the div.</p>
+<p>Paragraph 5. Not in the div.</p>    
+</body>
+</html>
